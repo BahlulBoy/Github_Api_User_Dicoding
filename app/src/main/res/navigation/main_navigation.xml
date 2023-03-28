@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/seachViewFragment">
+
+    <fragment
+        android:id="@+id/seachViewFragment"
+        android:name="com.example.mygithubapiuser.SeachViewFragment"
+        android:label="fragment_seach_view"
+        app:defaultNavHost="true"
+        tools:layout="@layout/fragment_seach_view" />
+    <fragment
+        android:id="@+id/detailUserFragment"
+        android:name="com.example.mygithubapiuser.DetailUserFragment"
+        android:label="fragment_detail_user"
+        tools:layout="@layout/fragment_detail_user" />
+</navigation>
