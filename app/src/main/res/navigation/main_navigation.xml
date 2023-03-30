@@ -10,10 +10,18 @@
         android:name="com.example.mygithubapiuser.SeachViewFragment"
         android:label="fragment_seach_view"
         app:defaultNavHost="true"
-        tools:layout="@layout/fragment_seach_view" />
-    <fragment
-        android:id="@+id/detailUserFragment"
-        android:name="com.example.mygithubapiuser.DetailUserFragment"
-        android:label="fragment_detail_user"
-        tools:layout="@layout/fragment_detail_user" />
+        tools:layout="@layout/fragment_seach_view" >
+        <action
+            android:id="@+id/action_seachViewFragment_to_detailUserActivity"
+            app:destination="@id/detailUserActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/detailUserActivity"
+        android:name="com.example.mygithubapiuser.DetailUserActivity"
+        android:label="activity_detail_user"
+        tools:layout="@layout/activity_detail_user" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </activity>
 </navigation>
